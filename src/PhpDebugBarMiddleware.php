@@ -190,7 +190,7 @@ class PhpDebugBarMiddleware implements MiddlewareInterface
         return $map[$ext] ?? 'text/plain';
     }
 
-    private function isHtmlResponse(Response $response): bool
+    protected function isHtmlResponse(Response $response): bool
     {
         return $this->isHtml($response, 'Content-Type');
     }
