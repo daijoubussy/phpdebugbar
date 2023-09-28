@@ -17,7 +17,7 @@ use Slim\Http\Uri as SlimUri;
 /**
  * @author Witold Wasiczko <witold@wasiczko.pl>
  */
-final class PhpDebugBarMiddleware implements MiddlewareInterface
+class PhpDebugBarMiddleware implements MiddlewareInterface
 {
     public const FORCE_KEY = 'X-Enable-Debug-Bar';
 
