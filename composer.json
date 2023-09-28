@@ -1,5 +1,5 @@
 {
-    "name": "php-middleware/php-debug-bar",
+    "name": "etcoder/php-debug-bar",
     "description": "PHP Debug Bar PSR-15 middleware with PSR-7",
     "type": "library",
     "license": "MIT",
