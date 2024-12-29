@@ -17,7 +17,7 @@ use Slim\Http\Uri as SlimUri;
 /**
  * @author Witold Wasiczko <witold@wasiczko.pl>
  */
-final class PhpDebugBarMiddleware implements MiddlewareInterface
+class PhpDebugBarMiddleware implements MiddlewareInterface
 {
     public const FORCE_KEY = 'X-Enable-Debug-Bar';
 
@@ -190,7 +190,7 @@ final class PhpDebugBarMiddleware implements MiddlewareInterface
         return $map[$ext] ?? 'text/plain';
     }
 
-    private function isHtmlResponse(Response $response): bool
+    protected function isHtmlResponse(Response $response): bool
     {
         return $this->isHtml($response, 'Content-Type');
     }
